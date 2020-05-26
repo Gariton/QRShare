@@ -1,0 +1,14 @@
+{
+	"name": "QR Share",
+	"version": "1.0.0",
+	"manifest_version" : 2,
+	"description" : "share URL with QR code.",
+	"permissions": ["activeTab"],
+	"browser_action": {
+      "default_popup": "popup.html"
+    },
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+	    "js": ["./myscript.js"]
+	  }]
+}
